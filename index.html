@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/d61fe607bc.js" crossorigin="anonymous"></script>
     <title>AHCI</title>
 </head>
@@ -16,7 +17,7 @@
 <body>
     <header>
         <!-- Navbar below -->
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <a class="navbar-brand" href="index.html"><i class="fas fa-laptop-code"></i>AHCI</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,12 +34,20 @@
                     <li class="nav-item">
                         <a class="nav-link" href="analysis.html">Analysis</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px--1">
                         <a class="nav-link" href="results.html">Results</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="reflection.html">Reflections</a>
-                    </li>
+                    <li class="nav-item dropdown px-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                          Reflections
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="yash.html">Yash Chaudhari</a>
+                          <a class="dropdown-item" href="rachel.html">Rachel Lee</a>
+                          <a class="dropdown-item" href="matt.html">Matt Ripia</a>
+                          <a class="dropdown-item" href="jamie.html">Jaime King</a>
+                        </div>
+                      </li>
                 </ul>
             </div>
         </nav>
@@ -46,22 +55,33 @@
 
     <div class="body">
 
-        <hr>
-    </div>
-    <footer>
-        <p class="references">
-            <strong>Refrences</strong>
-        </p>
-        <p class="referencesList">
-            1. <br>
-            2. <br>
-            3. <br>
-            4. <br>
-            5.
-        </p>
-    </footer>
-
-
-</body>
-
-</html>
+    
+            <!-- Content -->
+            <div class="container">
+    
+                <!-- Page Intro -->
+                <div class="row page-intro">
+                    <div class="introduction_paragraph">
+                        <h2>Introduction</h2>
+    
+                        <p>We have been asked to conduct a usability study of the AUT Student Timetable Generator application (STG) which has been developed by a group of AUT students.The purpose of the website is to help students at AUT choose what streams to take when they are enrolling in papers so they get a timetable that suits them.</p>
+                        <p> Usability testing is an important aspect of software development as it uncovers issues that can be overlooked by developers. Even though a website or piece of software ‘works’ as in it is coded well, when a typical user gets their hands on it they may use it in a way that the developers never anticipated. By conducting regular user testing, software can be constructed to be intuitive for most users. </p>
+                        <p>By conducting a usability study on the STG webapp we aim to uncover the usability flaws that the website currently has and provide suggestions and improvements for developers to create a better, more intuitive website.</p>
+                        <p>Before we commence the study, we will research and investigate several techniques of conducting usability studies. Once we have chosen a method we will find the best way to gather data (through questions or metrics) that we can then analyse. The analysis of the data will uncover the usability flaws that we will then deliver back to the STG developers. </p>
+                        <hr>
+                    </div>
+                    <footer>
+                        <p class="references">
+                            <strong>Refrences</strong>
+                        </p>
+                        <p class="referencesList">
+                            1. <br>
+                            2. <br>
+                            3. <br>
+                            4. <br>
+                            5.
+                        </p>
+                    </footer>
+    </body>
+    
+    </html>
